@@ -55,17 +55,26 @@
     padding-bottom: 2rem;
     margin-bottom: 3rem;
   }
-
+    
   .logo-mark {
     font-family: 'Robotech GP', 'Orbitron', monospace;
     font-size: 48px;
     font-weight: 900;
     color: var(--pink);
     text-shadow: 0 0 30px var(--pink-glow), 0 0 60px rgba(255,45,120,0.15);
-    line-height: 1;
+    line-height: 0.9;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .logo-mission {
+    display: block;
     letter-spacing: 3px;
   }
-
+  .logo-disarm {
+    display: block;
+    letter-spacing: 0.515em;
+  }
   .header-meta { text-align: right; }
   .version { font-size: 9px; letter-spacing: 4px; color: var(--teal); text-transform: uppercase; }
   .tagline { font-size: 10px; letter-spacing: 3px; color: var(--muted); margin-top: 6px; }
@@ -189,7 +198,10 @@
 <header class="sys-header">
   <div>
     <div style="font-size:9px;letter-spacing:4px;color:var(--teal);text-transform:uppercase;margin-bottom:8px;">Design System · v1.0</div>
-    <div class="logo-mark">MISSION<br>DISARM</div>
+    <div class="logo-mark">
+      <span class="logo-mission">MISSION</span>
+      <span class="logo-disarm">DISARM</span>
+    </div>
   </div>
   <div class="header-meta">
     <div class="version">War Trivia · Landmine Cleanup</div>
