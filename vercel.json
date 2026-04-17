@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "mission-disarm-design-system",
+  "name": "missiondisarm-design-system",
   "builds": [
     {
       "src": "index.html",
